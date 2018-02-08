@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.main {
+			text-align: center;
+		}
+		.text {
+			margin-bottom: 50px;
+		}
+		.v-btn {
+			display: inline-block;
+			vertical-align: top;
+			padding: 0 15px;
+			margin: 0;
+			border: none;
+			border-radius: 0;
+			outline: none !important;
+			min-width: 200px;
+			height: 60px;
+			color: #fff;
+			background: #2e99db;
+
+			font-family: 'Roboto Light',Arial,sans-serif;
+			font-size: 19px;
+			line-height: 60px;
+			text-align: center;
+			text-decoration: none;
+
+			cursor: pointer;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+
+			transition: background .175s ease,box-shadow .175s ease;
+		}
+
+		.v-btn:active {
+			color: #fff;
+			background: #2183bf;
+			box-shadow: inset 2px 2px 6px rgba(0,0,0,.2);
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="logo">
+			<img src="ehopper-logo-263x83.png" alt="eHopper">
+		</div>
+		<h1>There is currently no connection to eHopper servers.</h1>
+		<div class="text">
+			<p>Please check your internet connection or configure your firewall.</p>
+			<p>If those options do not work, please check with your internet provider that ehopper.com and its subdomains are not blocked.</p>
+			<p>For support, please email <a href="mailto:support@ehopper.com">support@ehopper.com</a>.</p>
+		</div>
+		<button class="v-btn">Refresh</button>
+	</div>
+</body>
+</html>
