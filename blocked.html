@@ -4,8 +4,26 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<style>
+		html,
+		body,
 		.main {
+			height: 100%;
+		}
+		.main {
+			font-size: 0;
 			text-align: center;
+		}
+		.main:before {
+			content: '';
+			display: inline-block;
+			vertical-align: middle;
+			height: 100%;
+		}
+		.inner {
+			display: inline-block;
+			vertical-align: middle;
+			width: 100%;
+			font-size: 16px;
 		}
 		.text {
 			margin-bottom: 50px;
@@ -47,16 +65,15 @@
 </head>
 <body>
 	<div class="main">
-		<div class="logo">
-			<img src="ehopper-logo-263x83.png" alt="eHopper">
+		<div class="inner">
+			<h1>There is currently no connection to eHopper servers.</h1>
+			<div class="text">
+				<p>Please check your internet connection or configure your firewall.</p>
+				<p>If those options do not work, please check with your internet provider that ehopper.com and its subdomains are not blocked.</p>
+				<p>For support, please email <a href="mailto:support@ehopper.com">support@ehopper.com</a>.</p>
+			</div>
+			<button class="v-btn">Refresh</button>
 		</div>
-		<h1>There is currently no connection to eHopper servers.</h1>
-		<div class="text">
-			<p>Please check your internet connection or configure your firewall.</p>
-			<p>If those options do not work, please check with your internet provider that ehopper.com and its subdomains are not blocked.</p>
-			<p>For support, please email <a href="mailto:support@ehopper.com">support@ehopper.com</a>.</p>
-		</div>
-		<button class="v-btn">Refresh</button>
 	</div>
 </body>
 </html>
